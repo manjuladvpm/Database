@@ -1,0 +1,37 @@
+1.Setup a local database, create a table, insert some records using any database client 
+
+Setup a local database:
+
+CREATE DATABASE njc_labs
+ 
+Create a table:
+USE njc_labs
+CREATE TABLE student_name(
+ID No int,
+fname varchar(150),
+lname varchar(50),
+course varchar(255),
+duration varchar(50),
+address varchar(255),
+city varchar(255)
+);
+
+Another Table:
+
+CREATE TABLE employee_list(
+fname varchar(150)
+lname varchar(50)
+status varchar(150)
+designation varchar(255)
+city varchar(150)
+);
+
+2.Write SQL to inset and retaieve recoreds from the above table using the same database client
+
+INSERT INTO employee_list (fname,lname,city) SELECT fname,lname,city FROM student_list WHERE city=’Chennai’;
+
+
+
+3.Write java/python code to insert and retrieve the records from the database table. 
+
+
